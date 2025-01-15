@@ -2,6 +2,49 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
 
+import ImageGallery from "./ImageGallery";
+
+import blockeley1 from "./assets/images/blockeley/jpg/blockeley1.jpg";
+import blockeley2 from "./assets/images/blockeley/jpg/blockeley2.jpg";
+import blockeley3 from "./assets/images/blockeley/jpg/blockeley3.jpg";
+import blockeley4 from "./assets/images/blockeley/jpg/blockeley4.jpg";
+import blockeley5 from "./assets/images/blockeley/jpg/blockeley5.jpg";
+import blockeley6 from "./assets/images/blockeley/jpg/blockeley6.jpg";
+import blockeley7 from "./assets/images/blockeley/jpg/blockeley7.jpg";
+import blockeley8 from "./assets/images/blockeley/jpg/blockeley8.jpg";
+import blockeley9 from "./assets/images/blockeley/jpg/blockeley9.jpg";
+import blockeley10 from "./assets/images/blockeley/jpg/blockeley10.jpg";
+import blockeley11 from "./assets/images/blockeley/jpg/blockeley11.jpg";
+import blockeley12 from "./assets/images/blockeley/jpg/blockeley12.jpg";
+import blockeley13 from "./assets/images/blockeley/jpg/blockeley13.jpg";
+import blockeley14 from "./assets/images/blockeley/jpg/blockeley14.jpg";
+import blockeley15 from "./assets/images/blockeley/jpg/blockeley15.jpg";
+import blockeley16 from "./assets/images/blockeley/jpg/blockeley16.jpg";
+import blockeley17 from "./assets/images/blockeley/jpg/blockeley17.jpg";
+import blockeley18 from "./assets/images/blockeley/jpg/blockeley18.jpg";
+
+const images = [
+    blockeley1,
+    blockeley2,
+    blockeley3,
+    blockeley4,
+    blockeley5,
+    blockeley6,
+    blockeley7,
+    blockeley8,
+    blockeley9,
+    blockeley10,
+    blockeley11,
+    blockeley12,
+    blockeley13,
+    blockeley14,
+    blockeley15,
+    blockeley16,
+    blockeley17,
+    blockeley18,
+
+];
+
 const Blockeley= () => {
   return (
     <div>
@@ -45,9 +88,9 @@ const Blockeley= () => {
           </a>
           <br />
           <b>Discord: </b>
-                                <a href="https://discord.gg/mmAK4D5">
-                                Blockeley
-                                </a>
+                <a href="https://discord.gg/mmAK4D5">
+                Blockeley
+                </a>
           <br />
           <b>News ↴</b>
           <ul>
@@ -79,6 +122,11 @@ const Blockeley= () => {
             <li>
                 <a href="https://ars.electronica.art/keplersgardens/en/get-inspired/">
                 Ars Electronica, <i>Ars Electronica x Digital Cross Over</i>, 2020
+                </a>
+			</li>
+            <li>
+                <a href="https://www.lib.berkeley.edu/about/news/fiat-blocks">
+                UC Berkeley Library, <i>Fiat Blocks: Students use ‘Minecraft’ to build UC Berkeley (and its libraries) in stunning detail</i>, 2020
                 </a>
 			</li>
           </ul>
@@ -130,42 +178,7 @@ const Blockeley= () => {
           <b>Imgs ↴</b> 
           <br />
 
-          <img src="/assets/images/blockeley/jpg/blockeley1.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley2.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley3.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley4.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley5.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley6.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley7.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley8.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley9.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley10.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley11.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley12.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley13.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley14.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley15.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley16.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley17.jpg"/>	
-          <br />
-          <img src="/assets/images/blockeley/jpg/blockeley18.jpg"/>	
-          <br />
+          <ImageGallery images={images} />
 
         </p>
 

@@ -19,25 +19,19 @@ const About = () => {
           <Link to="/">↩ Home</Link><br />
           <b>About me:</b> Hello. Welcome to the about me page. I’m a
           {' '}
-          <a href="https://soundcloud.com/" target="_blank" rel="noopener noreferrer">
-            musician
-          </a>
+          <Link to="/music">musician</Link>
           ↪,{' '}
-          <a href="https://wikipedia.org/wiki/Blockeley" target="_blank" rel="noopener noreferrer">
-            map modder
-          </a>
+          <Link to="/maps">map modder</Link>
           ↪,{' '}
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-            photographer
-          </a>
+          <Link to="/photography">photographer</Link>
           ↪,{' '}
           <a href="https://github.com/bjornlustic" target="_blank" rel="noopener noreferrer">
             programmer
           </a>
           ↪, programming tutor, etc, living in New York, New York.
           <br />
-          <b>About this site:</b> This site is powered by React, last updated 01/15/25. I have had 3 or 4 different versions
-             of this website, and have decided on something more plain and simple this time.
+          <b>About this site:</b> This site is powered by React, I don't know why. I have had 3 or 4 different versions
+             of this website, starting back in 2015, and have decided on something more plain and simple this time.
         </p>
 
         <Link to="/">

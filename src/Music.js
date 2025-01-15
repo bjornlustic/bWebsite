@@ -2,6 +2,46 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
 
+import ImageGallery from "./ImageGallery";
+
+import music1 from "./assets/images/music/jpg/music1.jpg";
+import music2 from "./assets/images/music/jpg/music2.jpg";
+import music3 from "./assets/images/music/jpg/music3.jpg";
+import music4 from "./assets/images/music/jpg/music4.jpg";
+import music5 from "./assets/images/music/jpg/music5.jpg";
+import music6 from "./assets/images/music/jpg/music6.jpg";
+import music7 from "./assets/images/music/jpg/music7.jpg";
+import music8 from "./assets/images/music/jpg/music8.jpg";
+import music9 from "./assets/images/music/jpg/music9.jpg";
+import music10 from "./assets/images/music/jpg/music10.jpg";
+import music11 from "./assets/images/music/jpg/music11.jpg";
+import music12 from "./assets/images/music/jpg/music12.jpg";
+import music13 from "./assets/images/music/jpg/music13.jpg";
+import music14 from "./assets/images/music/jpg/music14.jpg";
+import music15 from "./assets/images/music/jpg/music15.jpg";
+import music16 from "./assets/images/music/jpg/music16.jpg";
+import music17 from "./assets/images/music/jpg/music17.jpg";
+
+const images = [
+    music1,
+    music2,
+    music3,
+    music4,
+    music5,
+    music6,
+    music7,
+    music8,
+    music9,
+    music10,
+    music11,
+    music12,
+    music13,
+    music14,
+    music15,
+    music16,
+    music17,
+];
+
 const Music= () => {
   return (
     <div>
@@ -50,11 +90,73 @@ const Music= () => {
                 Shows
             </li>
                 <ul>
+                    <li>
+                        Broken Oscillators, <i>Synthesizers for Mental Health @ Lewis Hall, Berkeley, CA</i>, Aug 15, 2019
+                    </li>
+                    <li>
+                        DJ909OpenHat, <i>Engineering Ball @ Wurster Hall, Berkeley, CA</i>, Feb 7, 2020
+                    </li>
+                    <li>
                     <a href="https://ra.co/events/1408702" target="_blank" rel="noopener noreferrer">
-                        DJ909OpenHat, <i>Blockeley Music Festival</i>, May 31, 2020
+                        DJ909OpenHat, <i>Blockeley Music Festival @ Blockeley, The Internet</i>, May 29, 2020
                     </a>
+                    </li>
+                    <li>
+                        Broken Oscillators, <i>Live 1 @ Treehaven, Berkeley, CA</i>, Feb 13, 2021
+                    </li>
+                    <li>
+                        Broken Oscillators, <i>Live 2 @ Treehaven, Berkeley, CA</i>, Feb 18, 2021
+                    </li>
+                    <li>
+                        Broken Oscillators, <i>Live 3 @ Treehaven, Berkeley, CA</i>, Feb 19, 2021
+                    </li>
+                    <li>
+                        Broken Oscillators, <i>Live 4 @ Treehaven, Berkeley, CA</i>, Feb 24, 2021
+                    </li>
+                    <li>
+                        Broken Oscillators, <i>Live 5 @ Treehaven, Berkeley, CA</i>, Mar 5, 2021
+                    </li>
+                    <li>
+                        Broken Oscillators, <i>Live 6 @ Treehaven, Berkeley, CA</i>, Mar 9, 2021
+                    </li>
+                    <li>
+                        Bjorn, <i>The Knockout Set @ The Knockout, San Francisco, CA</i>, Nov 9, 2021
+                    </li>
+                    <li>
+                        Bjorn, <i>The Knockout Set @ The Knockout, San Francisco, CA</i>, Mar 1, 2022
+                    </li>
+                    <li>
+                        Bjorn, <i>The Milk Bar Set @ The Milk Bar, San Francisco, CA</i>, Mar 18, 2022
+                    </li>
+                    <li>
+                        Bjorn, <i>The Log Cabin Set @ The Log Cabin, San Anselmo, CA</i>, Jun 29, 2023
+                    </li>
+                    <li>
+                        Bjorn, <i>Smiley's Set @ Smiley's, Bolinas, CA</i>, Jul 7, 2023
+                    </li>
+                    <li>
+                      <s>Bjorn, <i>Bolinas Hardware Store Set @ Bolinas Hardware Store, Bolinas, CA</i>, Sept 16, 2023 </s> CANCELLED I GOT COVID 
+                    </li>
+                    
+                    <li>
+                    <a href="https://soundcloud.com/bjorn-live-show-archives/bolinas-hardware-in-bolinas-ca-april-6th-2024" target="_blank" rel="noopener noreferrer">
+                    Bjorn, <i>Bolinas Hardware Store Set @ Bolinas Hardware Store, Bolinas, CA</i>, Apr 6, 2024
+                    </a>
+                        
+                    </li>
+                    <li>
+                        Bjorn, <i>Techno in Golden Gate Park @ Chain of Lakes, Golden Gate Park, San Francisco, CA</i>, Jun 22, 2024
+                    </li>
+                    
                     
                 </ul>
+        </ul>
+            <b>Imgs ↴</b> 
+            <br />
+        
+            <ImageGallery images={images} />
+        
+            <ul>
             <li>
                 Gear
             </li>
@@ -212,15 +314,30 @@ const Music= () => {
                 <li>
                     Tascam 244 Portastudio (Sold)
                 </li>
+                <li>
+                    Moog MuRF (Sold)
+                </li>
+                <li>
+                    Korg SQ-64 (Sold)
+                </li>
+                <li>
+                    Korg SQ-1 (Sold)
+                </li>
+                <li>
+                    HKA Digitizer
+                </li>
+                <li>
+                    Pro-Co Rat (Loaned out)
+                </li>
+                <li>
+                    DBX-118 (Loaned out)
+                </li>
+                <li>
+                    Behringer Model D (Sold)
+                </li>
             </ul>
           </ul>
 
-          <b>Imgs ↴</b> 
-          <br />
-          <br />
-
-          <img src="/assets/images/music/jpg/music1.jpg"/>	
-          <br />
         </p>
 
         <Link to="/">

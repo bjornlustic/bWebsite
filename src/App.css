@@ -95,3 +95,21 @@ img {
   }
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adds space between images */
+}
+
+.gallery img {
+  object-fit: contain;
+  border-radius: 1px; /* Optional: Add rounded corners */
+  /* transition: transform 0.2s; Optional: Smooth zoom effect on hover */
+}
+
+/* .gallery img:hover {
+  transform: scale(1.05); Optional: Slight zoom on hover
+} */
+
+

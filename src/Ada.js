@@ -2,6 +2,48 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
 
+import ImageGallery from "./ImageGallery";
+
+import ada1 from "./assets/images/ada/jpg/ada1.jpg";
+import ada2 from "./assets/images/ada/jpg/ada2.jpg";
+import ada3 from "./assets/images/ada/jpg/ada3.jpg";
+import ada4 from "./assets/images/ada/jpg/ada4.jpg";
+import ada5 from "./assets/images/ada/jpg/ada5.jpg";
+import ada6 from "./assets/images/ada/jpg/ada6.jpg";
+import ada7 from "./assets/images/ada/jpg/ada7.jpg";
+import ada8 from "./assets/images/ada/jpg/ada8.jpg";
+import ada9 from "./assets/images/ada/jpg/ada9.jpg";
+import ada10 from "./assets/images/ada/jpg/ada10.jpg";
+import ada11 from "./assets/images/ada/jpg/ada11.jpg";
+import ada12 from "./assets/images/ada/jpg/ada12.jpg";
+import ada13 from "./assets/images/ada/jpg/ada13.jpg";
+import ada14 from "./assets/images/ada/jpg/ada14.jpg";
+import ada15 from "./assets/images/ada/jpg/ada15.jpg";
+import ada16 from "./assets/images/ada/jpg/ada16.jpg";
+import ada17 from "./assets/images/ada/jpg/ada17.jpg";
+import ada18 from "./assets/images/ada/jpg/ada18.jpg";
+
+const images = [
+  ada1, 
+  ada2,
+  ada3,
+  ada4,
+  ada5,
+  ada6,
+  ada7,
+  ada8,
+  ada9,
+  ada10,
+  ada11,
+  ada12,
+  ada13,
+  ada14,
+  ada15,
+  ada16,
+  ada17,
+  ada18
+];
+
 const Ada= () => {
   return (
     <div>
@@ -24,7 +66,7 @@ const Ada= () => {
           <br />
           <b>Medium:</b> DayZ 
           <br />
-          <b>Elevator pitch:</b> What if you could climb The Golden Gate Bridge in DayZ...
+          <b>Elevator pitch:</b> What if you could climb the Golden Gate Bridge in DayZ...
           <br />
           <b>Versions:</b>
           <ul>
@@ -48,14 +90,14 @@ const Ada= () => {
           </a> */}
           <br />
           <b>Steam Workshop: </b> 
-                                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3233839067">
-                                Ada Alpha
-                                </a>
+              <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3233839067">
+              Ada Alpha
+              </a>
           <br />
           <b>Discord: </b>
-                                <a href="https://discord.gg/ckQr7ZwSQp">
-                                Ada (San Francisco)
-                                </a>
+              <a href="https://discord.gg/ckQr7ZwSQp">
+              Ada (San Francisco)
+              </a>
           <br />
           <b>Videos ↴</b>
           <ul>
@@ -73,42 +115,7 @@ const Ada= () => {
           <b>Imgs ↴</b> 
           <br />
 
-          <img src="/assets/images/ada/jpg/ada1.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada2.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada3.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada4.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada5.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada6.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada7.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada8.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada9.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada10.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada11.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada12.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada13.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada14.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada15.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada16.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada17.jpg"/>	
-          <br />
-          <img src="/assets/images/ada/jpg/ada18.jpg"/>	
-          <br />
+          <ImageGallery images={images} />
 
         </p>
 
