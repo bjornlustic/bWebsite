@@ -1,0 +1,97 @@
+/* General */
+body {
+  font-weight: 500;
+  font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+  font-size: 32px;
+  margin: 1%;
+}
+
+@media screen and (min-width: 300px) {
+  body {
+      font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+      font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+      font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+      font-size: 32px;
+  }
+}
+
+h1 {
+  font-weight: inherit;
+  font-size: inherit;  /* Inherit font size from the body */
+  margin: 0;
+}
+
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  margin: 0px;
+}
+
+/* Logo */
+.fix_img {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  width: 15%;
+}
+
+.fix_txt {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  text-align: right;
+  font-size: 6vw;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbs img {
+  float: left;
+  padding: 0px;
+}
+
+/* Print */
+@media print {
+  body {
+      font-size: 16px;
+  }
+
+  img {
+      max-width: 45%;
+      max-height: 45%;
+  }
+
+  .thumbs img {
+      max-height: 150px;
+  }
+
+  .fix {
+      width: 10%;
+  }
+}
+
