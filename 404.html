@@ -1,13 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bjorn</title>
+    <title>404 - Page Not Found</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <h1>Oops! Page not found.</h1>
+    <p>Redirecting you to the correct page...</p>
+
+    <script type="text/javascript">
+      // Get the current path and remove the base repository path if present
+      var redirect = window.location.pathname.replace('/bjornlustic.github.io', '');
+      
+      // Redirect to the correct route
+      window.location.replace('/bjornlustic.github.io' + redirect);
+    </script>
   </body>
 </html>
