@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bjornlustic.github.io/static/css/main.1eaf631f.css",
-    "main.js": "/bjornlustic.github.io/static/js/main.1f5a7e8c.js",
+    "main.css": "/bjornlustic.github.io/static/css/main.7c88653c.css",
+    "main.js": "/bjornlustic.github.io/static/js/main.11d6a187.js",
     "static/js/488.273886f3.chunk.js": "/bjornlustic.github.io/static/js/488.273886f3.chunk.js",
     "index.html": "/bjornlustic.github.io/index.html",
-    "main.1eaf631f.css.map": "/bjornlustic.github.io/static/css/main.1eaf631f.css.map",
-    "main.1f5a7e8c.js.map": "/bjornlustic.github.io/static/js/main.1f5a7e8c.js.map",
+    "main.7c88653c.css.map": "/bjornlustic.github.io/static/css/main.7c88653c.css.map",
+    "main.11d6a187.js.map": "/bjornlustic.github.io/static/js/main.11d6a187.js.map",
     "488.273886f3.chunk.js.map": "/bjornlustic.github.io/static/js/488.273886f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1eaf631f.css",
-    "static/js/main.1f5a7e8c.js"
+    "static/css/main.7c88653c.css",
+    "static/js/main.11d6a187.js"
   ]
 }
