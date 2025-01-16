@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/bjornlustic.github.io/static/css/main.0e601bd5.css",
-    "main.js": "/bjornlustic.github.io/static/js/main.f589b3f0.js",
+    "main.js": "/bjornlustic.github.io/static/js/main.ff84bdd8.js",
     "static/js/488.e87b93f0.chunk.js": "/bjornlustic.github.io/static/js/488.e87b93f0.chunk.js",
+    "static/media/photography1.jpg": "/bjornlustic.github.io/static/media/photography1.0c176c0237548553159b.jpg",
     "static/media/photography3.jpg": "/bjornlustic.github.io/static/media/photography3.035af4d12ea835fcd79c.jpg",
     "static/media/ada13.jpg": "/bjornlustic.github.io/static/media/ada13.c5dd2eab686a5e602882.jpg",
     "static/media/ada4.jpg": "/bjornlustic.github.io/static/media/ada4.a9a7ff0457eb647b2cf0.jpg",
@@ -22,7 +23,6 @@
     "static/media/photography16.jpg": "/bjornlustic.github.io/static/media/photography16.ae02a3adee8b2836eac3.jpg",
     "static/media/photography32.jpg": "/bjornlustic.github.io/static/media/photography32.6913b3913b0d1673a31d.jpg",
     "static/media/photography25.jpg": "/bjornlustic.github.io/static/media/photography25.cd38979cf6e61e9effea.jpg",
-    "static/media/photography1.jpg": "/bjornlustic.github.io/static/media/photography1.0c176c0237548553159b.jpg",
     "static/media/music13.jpg": "/bjornlustic.github.io/static/media/music13.f64162019a2d44e3e443.jpg",
     "static/media/photography27.jpg": "/bjornlustic.github.io/static/media/photography27.c052f3ba7b77836661a8.jpg",
     "static/media/photography28.jpg": "/bjornlustic.github.io/static/media/photography28.f5a7e2ed7a0eef5dbb58.jpg",
@@ -94,11 +94,11 @@
     "static/media/photography29.jpg": "/bjornlustic.github.io/static/media/photography29.8d6b6e7b6526aa4cf08d.jpg",
     "index.html": "/bjornlustic.github.io/index.html",
     "main.0e601bd5.css.map": "/bjornlustic.github.io/static/css/main.0e601bd5.css.map",
-    "main.f589b3f0.js.map": "/bjornlustic.github.io/static/js/main.f589b3f0.js.map",
+    "main.ff84bdd8.js.map": "/bjornlustic.github.io/static/js/main.ff84bdd8.js.map",
     "488.e87b93f0.chunk.js.map": "/bjornlustic.github.io/static/js/488.e87b93f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e601bd5.css",
-    "static/js/main.f589b3f0.js"
+    "static/js/main.ff84bdd8.js"
   ]
 }
