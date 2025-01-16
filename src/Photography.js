@@ -42,69 +42,53 @@ import photography35 from "./assets/images/photography/jpg/photography35.jpg";
 import photography36 from "./assets/images/photography/jpg/photography36.jpg";
 
 const images = [
-  photography1,
-  photography2,
-  photography3,
-  photography4,
-  photography5,
-  photography6,
-  photography7,
-  photography8,
-  photography9,
-  photography10,
-  photography11,
-  photography12,
-  photography13,
-  photography14,
-  photography15,
-  photography16,
-  photography17,
-  photography18,
-  photography19,
-  photography20,
-  photography21,
-  photography22,
-  photography23,
-  photography24,
-  photography25,
-  photography26,
-  photography27,
-  photography28,
-  photography29,
-  photography30,
-  photography31,
-  photography32,
-  photography33,
-  photography34,
-  photography35,
-  photography36,
+  { src: photography1, link: "/photography/photos/photography1" },
+  { src: photography2, link: "/photography/photos/photography2" },
+  { src: photography3, link: "/photography/photos/photography3" },
+  { src: photography4, link: "/photography/photos/photography4" },
+  { src: photography5, link: "/photography/photos/photography5" },
+  { src: photography6, link: "/photography/photos/photography6" },
+  { src: photography7, link: "/photography/photos/photography7" },
+  { src: photography8, link: "/photography/photos/photography8" },
+  { src: photography9, link: "/photography/photos/photography9" },
+  { src: photography10, link: "/photography/photos/photography10" },
+  { src: photography11, link: "/photography/photos/photography11" },
+  { src: photography12, link: "/photography/photos/photography12" },
+  { src: photography13, link: "/photography/photos/photography13" },
+  { src: photography14, link: "/photography/photos/photography14" },
+  { src: photography15, link: "/photography/photos/photography15" },
+  { src: photography16, link: "/photography/photos/photography16" },
+  { src: photography17, link: "/photography/photos/photography17" },
+  { src: photography18, link: "/photography/photos/photography18" },
+  { src: photography19, link: "/photography/photos/photography19" },
+  { src: photography20, link: "/photography/photos/photography20" },
+  { src: photography21, link: "/photography/photos/photography21" },
+  { src: photography22, link: "/photography/photos/photography22" },
+  { src: photography23, link: "/photography/photos/photography23" },
+  { src: photography24, link: "/photography/photos/photography24" },
+  { src: photography25, link: "/photography/photos/photography25" },
+  { src: photography26, link: "/photography/photos/photography26" },
+  { src: photography27, link: "/photography/photos/photography27" },
+  { src: photography28, link: "/photography/photos/photography28" },
+  { src: photography29, link: "/photography/photos/photography29" },
+  { src: photography30, link: "/photography/photos/photography30" },
+  { src: photography31, link: "/photography/photos/photography31" },
+  { src: photography32, link: "/photography/photos/photography32" },
+  { src: photography33, link: "/photography/photos/photography33" },
+  { src: photography34, link: "/photography/photos/photography34" },
+  { src: photography35, link: "/photography/photos/photography35" },
+  { src: photography36, link: "/photography/photos/photography36" },
 ];
-
 
 const Photography = () => {
   return (
     <div>
       <Helmet>
-        <meta name="description" content="Bjorn Lustic's Photography Page" />
-        <meta name="keywords" content="Bjorn Lustic, Photography" />
-        <meta charSet="UTF-8" />
-        <meta name="author" content="Bjorn Lustic" />
         <title>Photography</title>
       </Helmet>
-      <body>
-        <h1>Bjorn Lustic</h1>
         <p>
           <Link to="/">↩ Home</Link>
           <br />
-
-          <li>
-             Shows
-            </li>
-                <ul>
-                    <li>
-                        Bjorn Selected Works 2017 - 2019, <i>BAMFEST 2019 @ Crescent Lawn, UC Berkeley, Berkeley, CA</i>, May 3, 2019
-                    </li>
-                </ul>
 
           <b>Imgs ↴</b>
           <br />
@@ -113,17 +97,21 @@ const Photography = () => {
 
           <br />
           <ul>
+          <li> Shows </li>
+                <ul>
+                    <li> Bjorn Selected Works 2017 - 2019, <i>BAMFEST 2019 @ Crescent Lawn, UC Berkeley, Berkeley, CA</i>, May 3, 2019 </li>
+                </ul>
             <li>Cameras</li>
             <ul>
               <li>Nikon F3</li>
-              <li>Konica Hexar AF</li>
-              <li>Mamiya 645</li>
-              <li>Olympus MJU II</li>
-              <li>Canon AE-1</li>
+              <li>Konica Hexar AF (2x, one had error E11 and then 3 years later started working again)</li>
+              <li>Mamiya 645 (Borrowed and returned) </li>
+              <li>Olympus MJU II (2x, 1 broken, 1 loaned out) </li>
+              <li>Canon AE-1 (Sold) </li>
               <li>Hasselblad 501cm</li>
               <li>Leica R3 Mot</li>
-              <li>Canon AF 35m</li>
-              <li>Sony A7</li>
+              <li>Canon AF 35m (Broken) </li>
+              <li>Sony A7 (Broken) </li>
               <li>Rollei 35 SE</li>
             </ul>
             <li>Lenses</li>
@@ -141,19 +129,12 @@ const Photography = () => {
               <li>Kodak Tri-x 400</li>
               <li>Kodak Velvia 50</li>
               <li>Kodak Ektar 100</li>
-              <li>Ilford HP5</li>
               <li>Kodak Aerochrome</li>
+              <li>Ilford HP5</li>
             </ul>
           </ul>
-
         </p>
 
-        <Link to="/">
-          <div className="fix_txt">BJØRN</div>
-        </Link>
-
-        <footer>©</footer>
-      </body>
     </div>
   );
 };

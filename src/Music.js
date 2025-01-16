@@ -23,37 +23,32 @@ import music16 from "./assets/images/music/jpg/music16.jpg";
 import music17 from "./assets/images/music/jpg/music17.jpg";
 
 const images = [
-    music1,
-    music2,
-    music3,
-    music4,
-    music5,
-    music6,
-    music7,
-    music8,
-    music9,
-    music10,
-    music11,
-    music12,
-    music13,
-    music14,
-    music15,
-    music16,
-    music17,
+    { src: music1, link: "/music/photos/music1" },
+    { src: music2, link: "/music/photos/music2" },
+    { src: music3, link: "/music/photos/music3" },
+    { src: music4, link: "/music/photos/music4" },
+    { src: music5, link: "/music/photos/music5" },
+    { src: music6, link: "/music/photos/music6" },
+    { src: music7, link: "/music/photos/music7" },
+    { src: music8, link: "/music/photos/music8" },
+    { src: music9, link: "/music/photos/music9" },
+    { src: music10, link: "/music/photos/music10" },
+    { src: music11, link: "/music/photos/music11" },
+    { src: music12, link: "/music/photos/music12" },
+    { src: music13, link: "/music/photos/music13" },
+    { src: music14, link: "/music/photos/music14" },
+    { src: music15, link: "/music/photos/music15" },
+    { src: music16, link: "/music/photos/music16" },
+    { src: music17, link: "/music/photos/music17" },
 ];
+  
 
 const Music= () => {
   return (
     <div>
       <Helmet>
-        <meta name="description" content="Bjorn Lustic's Music Page" />
-        <meta name="keywords" content="Bjorn Lustic, Music" />
-        <meta charSet="UTF-8" />
-        <meta name="author" content="Bjorn Lustic" />
         <title>Music</title>
       </Helmet>
-      <body>
-        <h1>Bjorn Lustic</h1>
         <p>
           
           <Link to="/">↩ Home</Link><br />
@@ -339,13 +334,6 @@ const Music= () => {
           </ul>
 
         </p>
-
-        <Link to="/">
-          <div className="fix_txt">BJØRN</div>
-        </Link>
-
-        <footer>©</footer>
-      </body>
     </div>
   );
 };

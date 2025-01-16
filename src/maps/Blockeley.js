@@ -2,61 +2,56 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
 
-import ImageGallery from "./ImageGallery";
+import ImageGallery from "../ImageGallery";
 
-import blockeley1 from "./assets/images/blockeley/jpg/blockeley1.jpg";
-import blockeley2 from "./assets/images/blockeley/jpg/blockeley2.jpg";
-import blockeley3 from "./assets/images/blockeley/jpg/blockeley3.jpg";
-import blockeley4 from "./assets/images/blockeley/jpg/blockeley4.jpg";
-import blockeley5 from "./assets/images/blockeley/jpg/blockeley5.jpg";
-import blockeley6 from "./assets/images/blockeley/jpg/blockeley6.jpg";
-import blockeley7 from "./assets/images/blockeley/jpg/blockeley7.jpg";
-import blockeley8 from "./assets/images/blockeley/jpg/blockeley8.jpg";
-import blockeley9 from "./assets/images/blockeley/jpg/blockeley9.jpg";
-import blockeley10 from "./assets/images/blockeley/jpg/blockeley10.jpg";
-import blockeley11 from "./assets/images/blockeley/jpg/blockeley11.jpg";
-import blockeley12 from "./assets/images/blockeley/jpg/blockeley12.jpg";
-import blockeley13 from "./assets/images/blockeley/jpg/blockeley13.jpg";
-import blockeley14 from "./assets/images/blockeley/jpg/blockeley14.jpg";
-import blockeley15 from "./assets/images/blockeley/jpg/blockeley15.jpg";
-import blockeley16 from "./assets/images/blockeley/jpg/blockeley16.jpg";
-import blockeley17 from "./assets/images/blockeley/jpg/blockeley17.jpg";
-import blockeley18 from "./assets/images/blockeley/jpg/blockeley18.jpg";
+import blockeley1 from "../assets/images/blockeley/jpg/blockeley1.jpg";
+import blockeley2 from "../assets/images/blockeley/jpg/blockeley2.jpg";
+import blockeley3 from "../assets/images/blockeley/jpg/blockeley3.jpg";
+import blockeley4 from "../assets/images/blockeley/jpg/blockeley4.jpg";
+import blockeley5 from "../assets/images/blockeley/jpg/blockeley5.jpg";
+import blockeley6 from "../assets/images/blockeley/jpg/blockeley6.jpg";
+import blockeley7 from "../assets/images/blockeley/jpg/blockeley7.jpg";
+import blockeley8 from "../assets/images/blockeley/jpg/blockeley8.jpg";
+import blockeley9 from "../assets/images/blockeley/jpg/blockeley9.jpg";
+import blockeley10 from "../assets/images/blockeley/jpg/blockeley10.jpg";
+import blockeley11 from "../assets/images/blockeley/jpg/blockeley11.jpg";
+import blockeley12 from "../assets/images/blockeley/jpg/blockeley12.jpg";
+import blockeley13 from "../assets/images/blockeley/jpg/blockeley13.jpg";
+import blockeley14 from "../assets/images/blockeley/jpg/blockeley14.jpg";
+import blockeley15 from "../assets/images/blockeley/jpg/blockeley15.jpg";
+import blockeley16 from "../assets/images/blockeley/jpg/blockeley16.jpg";
+import blockeley17 from "../assets/images/blockeley/jpg/blockeley17.jpg";
+import blockeley18 from "../assets/images/blockeley/jpg/blockeley18.jpg";
 
 const images = [
-    blockeley1,
-    blockeley2,
-    blockeley3,
-    blockeley4,
-    blockeley5,
-    blockeley6,
-    blockeley7,
-    blockeley8,
-    blockeley9,
-    blockeley10,
-    blockeley11,
-    blockeley12,
-    blockeley13,
-    blockeley14,
-    blockeley15,
-    blockeley16,
-    blockeley17,
-    blockeley18,
-
+  { src: blockeley1, link: "/maps/blockeley/photos/blockeley1" },
+  { src: blockeley2, link: "/maps/blockeley/photos/blockeley2" },
+  { src: blockeley3, link: "/maps/blockeley/photos/blockeley3" },
+  { src: blockeley4, link: "/maps/blockeley/photos/blockeley4" },
+  { src: blockeley5, link: "/maps/blockeley/photos/blockeley5" },
+  { src: blockeley6, link: "/maps/blockeley/photos/blockeley6" },
+  { src: blockeley7, link: "/maps/blockeley/photos/blockeley7" },
+  { src: blockeley8, link: "/maps/blockeley/photos/blockeley8" },
+  { src: blockeley9, link: "/maps/blockeley/photos/blockeley9" },
+  { src: blockeley10, link: "/maps/blockeley/photos/blockeley10" },
+  { src: blockeley11, link: "/maps/blockeley/photos/blockeley11" },
+  { src: blockeley12, link: "/maps/blockeley/photos/blockeley12" },
+  { src: blockeley13, link: "/maps/blockeley/photos/blockeley13" },
+  { src: blockeley14, link: "/maps/blockeley/photos/blockeley14" },
+  { src: blockeley15, link: "/maps/blockeley/photos/blockeley15" },
+  { src: blockeley16, link: "/maps/blockeley/photos/blockeley16" },
+  { src: blockeley17, link: "/maps/blockeley/photos/blockeley17" },
+  { src: blockeley18, link: "/maps/blockeley/photos/blockeley18" },
 ];
+
+
 
 const Blockeley= () => {
   return (
     <div>
       <Helmet>
-        <meta name="description" content="Bjorn Lustic's Blockeley Page" />
-        <meta name="keywords" content="Bjorn Lustic, Blockeley" />
-        <meta charSet="UTF-8" />
-        <meta name="author" content="Bjorn Lustic" />
         <title>Blockeley</title>
       </Helmet>
-      <body>
-        <h1>Bjorn Lustic</h1>
         <p>
           
           <Link to="/maps">↩ Maps</Link>
@@ -182,12 +177,6 @@ const Blockeley= () => {
 
         </p>
 
-        <Link to="/">
-          <div className="fix_txt">BJØRN</div>
-        </Link>
-
-        <footer>©</footer>
-      </body>
     </div>
   );
 };
