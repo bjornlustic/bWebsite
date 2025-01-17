@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bjornlustic.github.io/static/css/main.996903bf.css",
-    "main.js": "/bjornlustic.github.io/static/js/main.825ef7a5.js",
+    "main.js": "/bjornlustic.github.io/static/js/main.c0fd1943.js",
     "static/js/8193.f415c3bb.chunk.js": "/bjornlustic.github.io/static/js/8193.f415c3bb.chunk.js",
     "static/js/8405.4f330ef9.chunk.js": "/bjornlustic.github.io/static/js/8405.4f330ef9.chunk.js",
     "static/js/892.742a1365.chunk.js": "/bjornlustic.github.io/static/js/892.742a1365.chunk.js",
@@ -173,6 +173,7 @@
     "static/media/photography24.jpg": "/bjornlustic.github.io/static/media/photography24.6122e924360b54ffdf90.jpg",
     "static/media/music2.jpg": "/bjornlustic.github.io/static/media/music2.ba089288315cded19b85.jpg",
     "static/media/photography12.jpg": "/bjornlustic.github.io/static/media/photography12.e8a5cea581b6f0895cd2.jpg",
+    "static/media/explosion.png": "/bjornlustic.github.io/static/media/explosion.81aa47aca8e7ef1a3cd9.png",
     "static/media/blockeley3.png": "/bjornlustic.github.io/static/media/blockeley3.32ecd38426f28f2650d5.png",
     "static/media/ada13.jpg": "/bjornlustic.github.io/static/media/ada13.c5dd2eab686a5e602882.jpg",
     "static/media/photography31.jpg": "/bjornlustic.github.io/static/media/photography31.946b367ef9083a4de693.jpg",
@@ -222,10 +223,10 @@
     "static/media/ada8.jpg": "/bjornlustic.github.io/static/media/ada8.7d95a59769d3dd61dd67.jpg",
     "index.html": "/bjornlustic.github.io/index.html",
     "main.996903bf.css.map": "/bjornlustic.github.io/static/css/main.996903bf.css.map",
-    "main.825ef7a5.js.map": "/bjornlustic.github.io/static/js/main.825ef7a5.js.map"
+    "main.c0fd1943.js.map": "/bjornlustic.github.io/static/js/main.c0fd1943.js.map"
   },
   "entrypoints": [
     "static/css/main.996903bf.css",
-    "static/js/main.825ef7a5.js"
+    "static/js/main.c0fd1943.js"
   ]
 }
