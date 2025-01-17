@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import BouncingPorygon from './BouncingPorygon';
 import "./App.css";
 import About from './About';
 import Contact from './Contact';
@@ -13,6 +12,7 @@ import Ada from './maps/Ada';
 import Photography from './Photography';
 import ImagePage from './ImagePage';
 import ScrollToTop from './hooks/ScrollToTop';
+import BouncingPorygon from './BouncingPorygon';
 
 
 function Home() {
@@ -21,6 +21,7 @@ function Home() {
       <Helmet>
         <title>Home</title>
       </Helmet>
+      <BouncingPorygon />
     <nav>
       <ul>
         <li><Link to="/about">About</Link></li>
@@ -66,7 +67,6 @@ function App() {
     <Router>
       <ScrollToTop />
       <Header />
-      <BouncingPorygon />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

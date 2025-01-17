@@ -6,7 +6,7 @@ const BouncingPorygon = () => {
   const [porygons, setPorygons] = useState([]);
 
   useEffect(() => {
-    const randomCount = 1 //Math.floor(Math.random() * (9 - 3 + 1)) + 3; // Random between 3 and 9
+    const randomCount = Math.floor(Math.random() * (9 - 3 + 1)) + 3; // Random between 3 and 9
     setPorygons(Array.from({ length: randomCount }, createPorygon));
   }, []);
 
@@ -31,13 +31,14 @@ const BouncingPorygon = () => {
     const updatePositions = (time) => {
       if (previousTimeRef.current !== null) {
         const deltaTime = (time - previousTimeRef.current) / 1000; // Convert to seconds
+        const variableSpeed = speed + Math.floor(Math.random() * (1 - 1 + 1)) + 25;
 
         setPorygons(prevPorygons =>
           prevPorygons.map(porygon => {
             if (porygon.exploding) return porygon; // Skip exploding ones
 
-            let newX = porygon.x + porygon.dx * speed * deltaTime;
-            let newY = porygon.y + porygon.dy * speed * deltaTime;
+            let newX = porygon.x + porygon.dx * variableSpeed * deltaTime;
+            let newY = porygon.y + porygon.dy * variableSpeed * deltaTime;
             let newDx = porygon.dx;
             let newDy = porygon.dy;
             let newHue = (porygon.hue + hueSpeed * deltaTime) % 360; // Rotate colors
