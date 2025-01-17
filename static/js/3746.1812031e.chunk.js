@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3746],{3746:(e,s,t)=>{e.exports=t.p+"static/media/blockeley6.53f144b16e060c6d8327.png"}}]);

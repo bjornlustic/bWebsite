@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6365],{6365:(e,s,t)=>{e.exports=t.p+"static/media/ada25.c6f0f10c86e7d2f3626f.png"}}]);
