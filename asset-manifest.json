@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bjornlustic.github.io/static/css/main.2a4aa23e.css",
-    "main.js": "/bjornlustic.github.io/static/js/main.cc22210b.js",
+    "main.js": "/bjornlustic.github.io/static/js/main.a0285778.js",
     "static/js/8193.f415c3bb.chunk.js": "/bjornlustic.github.io/static/js/8193.f415c3bb.chunk.js",
     "static/js/8405.4f330ef9.chunk.js": "/bjornlustic.github.io/static/js/8405.4f330ef9.chunk.js",
     "static/js/892.742a1365.chunk.js": "/bjornlustic.github.io/static/js/892.742a1365.chunk.js",
@@ -79,7 +79,7 @@
     "static/js/9526.d56fe858.chunk.js": "/bjornlustic.github.io/static/js/9526.d56fe858.chunk.js",
     "static/js/2659.22f2c803.chunk.js": "/bjornlustic.github.io/static/js/2659.22f2c803.chunk.js",
     "static/js/8200.02da1fac.chunk.js": "/bjornlustic.github.io/static/js/8200.02da1fac.chunk.js",
-    "static/js/7500.b463c217.chunk.js": "/bjornlustic.github.io/static/js/7500.b463c217.chunk.js",
+    "static/js/6069.ad7f30b2.chunk.js": "/bjornlustic.github.io/static/js/6069.ad7f30b2.chunk.js",
     "static/js/1535.7934cf15.chunk.js": "/bjornlustic.github.io/static/js/1535.7934cf15.chunk.js",
     "static/js/6863.b972be87.chunk.js": "/bjornlustic.github.io/static/js/6863.b972be87.chunk.js",
     "static/js/2578.d1cded1d.chunk.js": "/bjornlustic.github.io/static/js/2578.d1cded1d.chunk.js",
@@ -167,7 +167,7 @@
     "static/media/photography19.jpg": "/bjornlustic.github.io/static/media/photography19.c6a895cbd3171feadedb.jpg",
     "static/media/photography1.jpg": "/bjornlustic.github.io/static/media/photography1.0c176c0237548553159b.jpg",
     "static/media/music13.jpg": "/bjornlustic.github.io/static/media/music13.f64162019a2d44e3e443.jpg",
-    "static/media/photography29.JPG": "/bjornlustic.github.io/static/media/photography29.d34ac74a35eecf470ac3.JPG",
+    "static/media/photography29.jpg": "/bjornlustic.github.io/static/media/photography29.8d6b6e7b6526aa4cf08d.jpg",
     "static/media/blockeley10.png": "/bjornlustic.github.io/static/media/blockeley10.e3ffcf0d051ce18896fa.png",
     "static/media/ada19.png": "/bjornlustic.github.io/static/media/ada19.39efba7ae11c341a44ad.png",
     "static/media/photography18.jpg": "/bjornlustic.github.io/static/media/photography18.302ba872eb84f10bda39.jpg",
@@ -222,13 +222,12 @@
     "static/media/blockeley14.jpg": "/bjornlustic.github.io/static/media/blockeley14.f8f15009d8c9a85892db.jpg",
     "static/media/blockeley8.jpg": "/bjornlustic.github.io/static/media/blockeley8.911caae60784397cf877.jpg",
     "static/media/ada8.jpg": "/bjornlustic.github.io/static/media/ada8.7d95a59769d3dd61dd67.jpg",
-    "static/media/photography29.jpg": "/bjornlustic.github.io/static/media/photography29.8d6b6e7b6526aa4cf08d.jpg",
     "index.html": "/bjornlustic.github.io/index.html",
     "main.2a4aa23e.css.map": "/bjornlustic.github.io/static/css/main.2a4aa23e.css.map",
-    "main.cc22210b.js.map": "/bjornlustic.github.io/static/js/main.cc22210b.js.map"
+    "main.a0285778.js.map": "/bjornlustic.github.io/static/js/main.a0285778.js.map"
   },
   "entrypoints": [
     "static/css/main.2a4aa23e.css",
-    "static/js/main.cc22210b.js"
+    "static/js/main.a0285778.js"
   ]
 }
