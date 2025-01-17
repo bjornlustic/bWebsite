@@ -6,7 +6,7 @@ const BouncingPorygon = () => {
   const [porygons, setPorygons] = useState([]);
 
   useEffect(() => {
-    const randomCount = Math.floor(Math.random() * (20 - 7 + 1)) + 7;
+    const randomCount = 1 //Math.floor(Math.random() * (30 - 7 + 1)) + 7;
     setPorygons(Array.from({ length: randomCount }, createPorygon));
   }, []);
 
