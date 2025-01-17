@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[877],{877:(e,s,t)=>{e.exports=t.p+"static/media/music14.4640feba1e2b2436d3a7.jpg"}}]);

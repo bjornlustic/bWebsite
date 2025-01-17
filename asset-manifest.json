@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bjornlustic.github.io/static/css/main.996903bf.css",
-    "main.js": "/bjornlustic.github.io/static/js/main.659676c6.js",
+    "main.js": "/bjornlustic.github.io/static/js/main.bf0f2ba9.js",
     "static/js/8193.f415c3bb.chunk.js": "/bjornlustic.github.io/static/js/8193.f415c3bb.chunk.js",
     "static/js/8405.4f330ef9.chunk.js": "/bjornlustic.github.io/static/js/8405.4f330ef9.chunk.js",
     "static/js/892.742a1365.chunk.js": "/bjornlustic.github.io/static/js/892.742a1365.chunk.js",
@@ -52,12 +52,9 @@
     "static/js/4772.11c47e0a.chunk.js": "/bjornlustic.github.io/static/js/4772.11c47e0a.chunk.js",
     "static/js/2579.b65a50cd.chunk.js": "/bjornlustic.github.io/static/js/2579.b65a50cd.chunk.js",
     "static/js/6118.35d62186.chunk.js": "/bjornlustic.github.io/static/js/6118.35d62186.chunk.js",
-    "static/js/877.6a53466a.chunk.js": "/bjornlustic.github.io/static/js/877.6a53466a.chunk.js",
-    "static/js/6096.0838f816.chunk.js": "/bjornlustic.github.io/static/js/6096.0838f816.chunk.js",
     "static/js/3359.8c763b08.chunk.js": "/bjornlustic.github.io/static/js/3359.8c763b08.chunk.js",
     "static/js/7330.a458b385.chunk.js": "/bjornlustic.github.io/static/js/7330.a458b385.chunk.js",
     "static/js/9330.b02da4ab.chunk.js": "/bjornlustic.github.io/static/js/9330.b02da4ab.chunk.js",
-    "static/js/7391.b4f6a6fc.chunk.js": "/bjornlustic.github.io/static/js/7391.b4f6a6fc.chunk.js",
     "static/js/2756.b6097969.chunk.js": "/bjornlustic.github.io/static/js/2756.b6097969.chunk.js",
     "static/js/4561.880e67d2.chunk.js": "/bjornlustic.github.io/static/js/4561.880e67d2.chunk.js",
     "static/js/8710.4b657abd.chunk.js": "/bjornlustic.github.io/static/js/8710.4b657abd.chunk.js",
@@ -66,7 +63,6 @@
     "static/js/5525.9d73af99.chunk.js": "/bjornlustic.github.io/static/js/5525.9d73af99.chunk.js",
     "static/js/3677.80947c40.chunk.js": "/bjornlustic.github.io/static/js/3677.80947c40.chunk.js",
     "static/js/5265.a6e42246.chunk.js": "/bjornlustic.github.io/static/js/5265.a6e42246.chunk.js",
-    "static/js/868.a3059ae4.chunk.js": "/bjornlustic.github.io/static/js/868.a3059ae4.chunk.js",
     "static/js/915.95b12caf.chunk.js": "/bjornlustic.github.io/static/js/915.95b12caf.chunk.js",
     "static/js/5654.86040e4c.chunk.js": "/bjornlustic.github.io/static/js/5654.86040e4c.chunk.js",
     "static/js/6173.0f9ac623.chunk.js": "/bjornlustic.github.io/static/js/6173.0f9ac623.chunk.js",
@@ -78,8 +74,6 @@
     "static/js/1538.de10a94f.chunk.js": "/bjornlustic.github.io/static/js/1538.de10a94f.chunk.js",
     "static/js/6384.168159fa.chunk.js": "/bjornlustic.github.io/static/js/6384.168159fa.chunk.js",
     "static/js/8605.37801217.chunk.js": "/bjornlustic.github.io/static/js/8605.37801217.chunk.js",
-    "static/js/2674.272adccf.chunk.js": "/bjornlustic.github.io/static/js/2674.272adccf.chunk.js",
-    "static/js/4383.a0486f36.chunk.js": "/bjornlustic.github.io/static/js/4383.a0486f36.chunk.js",
     "static/js/2948.67d22692.chunk.js": "/bjornlustic.github.io/static/js/2948.67d22692.chunk.js",
     "static/js/7281.6391248a.chunk.js": "/bjornlustic.github.io/static/js/7281.6391248a.chunk.js",
     "static/js/9526.d56fe858.chunk.js": "/bjornlustic.github.io/static/js/9526.d56fe858.chunk.js",
@@ -149,7 +143,6 @@
     "static/media/music5.jpg": "/bjornlustic.github.io/static/media/music5.3b7f66d45d709af7629f.jpg",
     "static/media/music8.jpg": "/bjornlustic.github.io/static/media/music8.448df03c6b8a4af77599.jpg",
     "static/media/ada15.png": "/bjornlustic.github.io/static/media/ada15.eee40f806793e819477c.png",
-    "static/media/music14.jpg": "/bjornlustic.github.io/static/media/music14.dc5f25cd467012b90c56.jpg",
     "static/media/blockeley2.png": "/bjornlustic.github.io/static/media/blockeley2.bffd3d22d5622a50b041.png",
     "static/media/blockeley12.png": "/bjornlustic.github.io/static/media/blockeley12.26a3687e93b62d2f33df.png",
     "static/media/music6.jpg": "/bjornlustic.github.io/static/media/music6.549fff1c81d0c1c5cb14.jpg",
@@ -171,18 +164,13 @@
     "static/media/photography20.jpg": "/bjornlustic.github.io/static/media/photography20.fb58649d70749c3ceb05.jpg",
     "static/media/music10.jpg": "/bjornlustic.github.io/static/media/music10.c6a895cbd3171feadedb.jpg",
     "static/media/photography19.jpg": "/bjornlustic.github.io/static/media/photography19.c6a895cbd3171feadedb.jpg",
-    "static/media/music15.jpg": "/bjornlustic.github.io/static/media/music15.4b3f4d4b8a5c73d98c31.jpg",
     "static/media/photography1.jpg": "/bjornlustic.github.io/static/media/photography1.0c176c0237548553159b.jpg",
     "static/media/music13.jpg": "/bjornlustic.github.io/static/media/music13.f64162019a2d44e3e443.jpg",
-    "static/media/music3.jpg": "/bjornlustic.github.io/static/media/music3.f2c84594d62045bc7c3f.jpg",
     "static/media/blockeley10.png": "/bjornlustic.github.io/static/media/blockeley10.e3ffcf0d051ce18896fa.png",
     "static/media/ada19.png": "/bjornlustic.github.io/static/media/ada19.39efba7ae11c341a44ad.png",
     "static/media/photography18.jpg": "/bjornlustic.github.io/static/media/photography18.302ba872eb84f10bda39.jpg",
     "static/media/photography16.jpg": "/bjornlustic.github.io/static/media/photography16.ae02a3adee8b2836eac3.jpg",
     "static/media/photography24.jpg": "/bjornlustic.github.io/static/media/photography24.6122e924360b54ffdf90.jpg",
-    "static/media/photography11.jpg": "/bjornlustic.github.io/static/media/photography11.2ca77ecc6ade5fca24c2.jpg",
-    "static/media/photography23.jpg": "/bjornlustic.github.io/static/media/photography23.f6fd5bc7976dd151da84.jpg",
-    "static/media/photography22.jpg": "/bjornlustic.github.io/static/media/photography22.d34d4c5159b963ae7d8a.jpg",
     "static/media/music2.jpg": "/bjornlustic.github.io/static/media/music2.ba089288315cded19b85.jpg",
     "static/media/photography12.jpg": "/bjornlustic.github.io/static/media/photography12.e8a5cea581b6f0895cd2.jpg",
     "static/media/blockeley3.png": "/bjornlustic.github.io/static/media/blockeley3.32ecd38426f28f2650d5.png",
@@ -234,10 +222,10 @@
     "static/media/ada8.jpg": "/bjornlustic.github.io/static/media/ada8.7d95a59769d3dd61dd67.jpg",
     "index.html": "/bjornlustic.github.io/index.html",
     "main.996903bf.css.map": "/bjornlustic.github.io/static/css/main.996903bf.css.map",
-    "main.659676c6.js.map": "/bjornlustic.github.io/static/js/main.659676c6.js.map"
+    "main.bf0f2ba9.js.map": "/bjornlustic.github.io/static/js/main.bf0f2ba9.js.map"
   },
   "entrypoints": [
     "static/css/main.996903bf.css",
-    "static/js/main.659676c6.js"
+    "static/js/main.bf0f2ba9.js"
   ]
 }
