@@ -1,49 +1,26 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
-
 import ImageGallery from "../ImageGallery";
+import blockeleyImages from "../data/blockeley.json";
 
-import blockeley1 from "../assets/images/blockeley/jpg/blockeley1.jpg";
-import blockeley2 from "../assets/images/blockeley/jpg/blockeley2.jpg";
-import blockeley3 from "../assets/images/blockeley/jpg/blockeley3.jpg";
-import blockeley4 from "../assets/images/blockeley/jpg/blockeley4.jpg";
-import blockeley5 from "../assets/images/blockeley/jpg/blockeley5.jpg";
-import blockeley6 from "../assets/images/blockeley/jpg/blockeley6.jpg";
-import blockeley7 from "../assets/images/blockeley/jpg/blockeley7.jpg";
-import blockeley8 from "../assets/images/blockeley/jpg/blockeley8.jpg";
-import blockeley9 from "../assets/images/blockeley/jpg/blockeley9.jpg";
-import blockeley10 from "../assets/images/blockeley/jpg/blockeley10.jpg";
-import blockeley11 from "../assets/images/blockeley/jpg/blockeley11.jpg";
-import blockeley12 from "../assets/images/blockeley/jpg/blockeley12.jpg";
-import blockeley13 from "../assets/images/blockeley/jpg/blockeley13.jpg";
-import blockeley14 from "../assets/images/blockeley/jpg/blockeley14.jpg";
-import blockeley15 from "../assets/images/blockeley/jpg/blockeley15.jpg";
-import blockeley16 from "../assets/images/blockeley/jpg/blockeley16.jpg";
-import blockeley17 from "../assets/images/blockeley/jpg/blockeley17.jpg";
-import blockeley18 from "../assets/images/blockeley/jpg/blockeley18.jpg";
+const imageContext = require.context("../assets/images/blockeley/jpg", false, /\.(jpg|png)$/);
 
-const images = [
-  { src: blockeley1, link: "/maps/blockeley/photos/blockeley1" },
-  { src: blockeley2, link: "/maps/blockeley/photos/blockeley2" },
-  { src: blockeley3, link: "/maps/blockeley/photos/blockeley3" },
-  { src: blockeley4, link: "/maps/blockeley/photos/blockeley4" },
-  { src: blockeley5, link: "/maps/blockeley/photos/blockeley5" },
-  { src: blockeley6, link: "/maps/blockeley/photos/blockeley6" },
-  { src: blockeley7, link: "/maps/blockeley/photos/blockeley7" },
-  { src: blockeley8, link: "/maps/blockeley/photos/blockeley8" },
-  { src: blockeley9, link: "/maps/blockeley/photos/blockeley9" },
-  { src: blockeley10, link: "/maps/blockeley/photos/blockeley10" },
-  { src: blockeley11, link: "/maps/blockeley/photos/blockeley11" },
-  { src: blockeley12, link: "/maps/blockeley/photos/blockeley12" },
-  { src: blockeley13, link: "/maps/blockeley/photos/blockeley13" },
-  { src: blockeley14, link: "/maps/blockeley/photos/blockeley14" },
-  { src: blockeley15, link: "/maps/blockeley/photos/blockeley15" },
-  { src: blockeley16, link: "/maps/blockeley/photos/blockeley16" },
-  { src: blockeley17, link: "/maps/blockeley/photos/blockeley17" },
-  { src: blockeley18, link: "/maps/blockeley/photos/blockeley18" },
-];
-
+// Map images using require.context()
+const images = blockeleyImages.map(image => {
+  try {
+    // Extract filename from JSON path
+    const filename = image.src.split("/").pop();
+    
+    return {
+      ...image,
+      src: imageContext(`./${filename}`)
+    };
+  } catch (error) {
+    console.error(`Error loading image: ${image.src}`, error);
+    return image;
+  }
+});
 
 
 const Blockeley= () => {

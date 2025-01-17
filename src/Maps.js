@@ -18,7 +18,7 @@ const Maps= () => {
                 <ul>
                     <li>
                         <Link to="/maps/blockeley">Blockeley</Link>
-                        ↪
+                        
                     </li>
                 </ul>
             <li>
@@ -27,7 +27,7 @@ const Maps= () => {
                 <ul>
                     <li>
                         <Link to="/maps/ada">Ada</Link>
-                        ↪
+                        
                     </li>
                 </ul>
           </ul>

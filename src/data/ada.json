@@ -1,0 +1,35 @@
+[
+    {   "id": "a1", 
+        "src": "ada1.jpg", 
+        "srcFULL": "ada1.png", 
+        "category": "ada",
+        "nestedBackLink": "maps/ada",
+        "title": "Golden Gate Bridge",
+        "year": "2017",
+        "location": "Fort Baker, CA, USA",
+        "medium": "Film",
+        "more info": "Golden Gate Bridge"
+    },
+    {   "id": "a2", 
+        "src": "ada2.jpg",
+        "srcFULL": "ada2.png",
+        "category": "ada", 
+        "nestedBackLink": "maps/ada",
+        "title": "Bald Dancer",
+        "year": "2019",
+        "location": "London, UK",
+        "medium": "Film",
+        "more info": "Man dancing in London in some random music event."
+    },
+    {   "id": "a3", 
+        "src": "ada3.jpg",
+        "srcFULL": "ada3.png", 
+        "category": "ada",
+        "nestedBackLink": "maps/ada",
+        "title": "Triangle House",
+        "year": "2017",
+        "location": "Lake Tahoe, CA, USA",
+        "medium": "Film",
+        "more info": "Triangle house gate."
+    }
+]

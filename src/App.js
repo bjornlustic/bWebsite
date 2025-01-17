@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import { Helmet } from "react-helmet";
 import "./App.css";
 import About from './About';
 import Contact from './Contact';
@@ -10,7 +9,9 @@ import Maps from './Maps';
 import Blockeley from './maps/Blockeley';
 import Ada from './maps/Ada';
 import Photography from './Photography';
-import Photography1 from './photography/photos/Photography1';
+import ImagePage from './ImagePage';
+import ScrollToTop from './hooks/ScrollToTop';
+
 
 function Home() {
   return (
@@ -54,8 +55,10 @@ function Name() {
 }
 
 function App() {
+  
   return (
     <Router>
+      <ScrollToTop />
       <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -67,7 +70,7 @@ function App() {
             <Route path="/maps/blockeley" element={<Blockeley />} />
             <Route path="/maps/ada" element={<Ada />} />
             <Route path="/photography" element={<Photography />} />
-            <Route path="/photography/photos/Photography1" element={<Photography1 />} />
+            <Route path="/:category/photos/:id" element={<ImagePage />} />
           </Routes>
       <Footer />
       <Name />

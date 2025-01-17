@@ -1,48 +1,27 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";  // Import Link from react-router-dom
-
+import { Link } from "react-router-dom"; 
 import ImageGallery from "./ImageGallery";
+import musicImages from "./data/music.json";
 
-import music1 from "./assets/images/music/jpg/music1.jpg";
-import music2 from "./assets/images/music/jpg/music2.jpg";
-import music3 from "./assets/images/music/jpg/music3.jpg";
-import music4 from "./assets/images/music/jpg/music4.jpg";
-import music5 from "./assets/images/music/jpg/music5.jpg";
-import music6 from "./assets/images/music/jpg/music6.jpg";
-import music7 from "./assets/images/music/jpg/music7.jpg";
-import music8 from "./assets/images/music/jpg/music8.jpg";
-import music9 from "./assets/images/music/jpg/music9.jpg";
-import music10 from "./assets/images/music/jpg/music10.jpg";
-import music11 from "./assets/images/music/jpg/music11.jpg";
-import music12 from "./assets/images/music/jpg/music12.jpg";
-import music13 from "./assets/images/music/jpg/music13.jpg";
-import music14 from "./assets/images/music/jpg/music14.jpg";
-import music15 from "./assets/images/music/jpg/music15.jpg";
-import music16 from "./assets/images/music/jpg/music16.jpg";
-import music17 from "./assets/images/music/jpg/music17.jpg";
+const imageContext = require.context("./assets/images/music/jpg", false, /\.(jpg|png)$/);
 
-const images = [
-    { src: music1, link: "/music/photos/music1" },
-    { src: music2, link: "/music/photos/music2" },
-    { src: music3, link: "/music/photos/music3" },
-    { src: music4, link: "/music/photos/music4" },
-    { src: music5, link: "/music/photos/music5" },
-    { src: music6, link: "/music/photos/music6" },
-    { src: music7, link: "/music/photos/music7" },
-    { src: music8, link: "/music/photos/music8" },
-    { src: music9, link: "/music/photos/music9" },
-    { src: music10, link: "/music/photos/music10" },
-    { src: music11, link: "/music/photos/music11" },
-    { src: music12, link: "/music/photos/music12" },
-    { src: music13, link: "/music/photos/music13" },
-    { src: music14, link: "/music/photos/music14" },
-    { src: music15, link: "/music/photos/music15" },
-    { src: music16, link: "/music/photos/music16" },
-    { src: music17, link: "/music/photos/music17" },
-];
+// Map images using require.context()
+const images = musicImages.map(image => {
+  try {
+    // Extract filename from JSON path
+    const filename = image.src.split("/").pop();
+    
+    return {
+      ...image,
+      src: imageContext(`./${filename}`)
+    };
+  } catch (error) {
+    console.error(`Error loading image: ${image.src}`, error);
+    return image;
+  }
+});
   
-
 const Music= () => {
   return (
     <div>
@@ -93,8 +72,9 @@ const Music= () => {
                     </li>
                     <li>
                     <a href="https://ra.co/events/1408702" target="_blank" rel="noopener noreferrer">
-                        DJ909OpenHat, <i>Blockeley Music Festival @ Blockeley, The Internet</i>, May 29, 2020
+                        DJ909OpenHat, <i>Blockeley Music Festival @ Blockeley, The Internet</i>, May 29, 2020 
                     </a>
+                    ↪
                     </li>
                     <li>
                         Broken Oscillators, <i>Live 1 @ Treehaven, Berkeley, CA</i>, Feb 13, 2021
@@ -137,12 +117,11 @@ const Music= () => {
                     <a href="https://soundcloud.com/bjorn-live-show-archives/bolinas-hardware-in-bolinas-ca-april-6th-2024" target="_blank" rel="noopener noreferrer">
                     Bjorn, <i>Bolinas Hardware Store Set @ Bolinas Hardware Store, Bolinas, CA</i>, Apr 6, 2024
                     </a>
-                        
+                    ↪   
                     </li>
                     <li>
                         Bjorn, <i>Techno in Golden Gate Park @ Chain of Lakes, Golden Gate Park, San Francisco, CA</i>, Jun 22, 2024
                     </li>
-                    
                     
                 </ul>
         </ul>

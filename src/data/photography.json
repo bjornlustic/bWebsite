@@ -1,0 +1,32 @@
+[
+    {   "id": "1", 
+        "src": "photography1.jpg", 
+        "srcFULL": "photography1.jpg", 
+        "category": "photography",
+        "title": "Golden Gate Bridge",
+        "year": "2017",
+        "location": "Fort Baker, CA, USA",
+        "medium": "Film",
+        "more info": "Golden Gate Bridge"
+    },
+    {   "id": "2", 
+        "src": "photography2.jpg",
+        "srcFULL": "photography2.jpg", 
+        "category": "photography", 
+        "title": "Bald Dancer",
+        "year": "2019",
+        "location": "London, UK",
+        "medium": "Film",
+        "more info": "Man dancing in London in some random music event."
+    },
+    {   "id": "3", 
+        "src": "photography3.jpg", 
+        "srcFULL": "photography3.jpg", 
+        "category": "photography",
+        "title": "Triangle House",
+        "year": "2017",
+        "location": "Lake Tahoe, CA, USA",
+        "medium": "Film",
+        "more info": "Triangle house gate."
+    }
+]

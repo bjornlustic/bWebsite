@@ -1,50 +1,26 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
-
 import ImageGallery from "../ImageGallery";
+import adaImages from "../data/ada.json";
 
-import ada1 from "../assets/images/ada/jpg/ada1.jpg";
-import ada2 from "../assets/images/ada/jpg/ada2.jpg";
-import ada3 from "../assets/images/ada/jpg/ada3.jpg";
-import ada4 from "../assets/images/ada/jpg/ada4.jpg";
-import ada5 from "../assets/images/ada/jpg/ada5.jpg";
-import ada6 from "../assets/images/ada/jpg/ada6.jpg";
-import ada7 from "../assets/images/ada/jpg/ada7.jpg";
-import ada8 from "../assets/images/ada/jpg/ada8.jpg";
-import ada9 from "../assets/images/ada/jpg/ada9.jpg";
-import ada10 from "../assets/images/ada/jpg/ada10.jpg";
-import ada11 from "../assets/images/ada/jpg/ada11.jpg";
-import ada12 from "../assets/images/ada/jpg/ada12.jpg";
-import ada13 from "../assets/images/ada/jpg/ada13.jpg";
-import ada14 from "../assets/images/ada/jpg/ada14.jpg";
-import ada15 from "../assets/images/ada/jpg/ada15.jpg";
-import ada16 from "../assets/images/ada/jpg/ada16.jpg";
-import ada17 from "../assets/images/ada/jpg/ada17.jpg";
-import ada18 from "../assets/images/ada/jpg/ada18.jpg";
+const imageContext = require.context("../assets/images/ada/jpg", false, /\.(jpg|png)$/);
 
-const images = [
-  { src: ada1, link: "/maps/ada/photos/ada1" },
-  { src: ada2, link: "/maps/ada/photos/ada2" },
-  { src: ada3, link: "/maps/ada/photos/ada3" },
-  { src: ada4, link: "/maps/ada/photos/ada4" },
-  { src: ada5, link: "/maps/ada/photos/ada5" },
-  { src: ada6, link: "/maps/ada/photos/ada6" },
-  { src: ada7, link: "/maps/ada/photos/ada7" },
-  { src: ada8, link: "/maps/ada/photos/ada8" },
-  { src: ada9, link: "/maps/ada/photos/ada9" },
-  { src: ada10, link: "/maps/ada/photos/ada10" },
-  { src: ada11, link: "/maps/ada/photos/ada11" },
-  { src: ada12, link: "/maps/ada/photos/ada12" },
-  { src: ada13, link: "/maps/ada/photos/ada13" },
-  { src: ada14, link: "/maps/ada/photos/ada14" },
-  { src: ada15, link: "/maps/ada/photos/ada15" },
-  { src: ada16, link: "/maps/ada/photos/ada16" },
-  { src: ada17, link: "/maps/ada/photos/ada17" },
-  { src: ada18, link: "/maps/ada/photos/ada18" },
-];
-
-
+// Map images using require.context()
+const images = adaImages.map(image => {
+  try {
+    // Extract filename from JSON path
+    const filename = image.src.split("/").pop();
+    
+    return {
+      ...image,
+      src: imageContext(`./${filename}`)
+    };
+  } catch (error) {
+    console.error(`Error loading image: ${image.src}`, error);
+    return image;
+  }
+});
 
 const Ada= () => {
   return (

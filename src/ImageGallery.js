@@ -1,45 +1,37 @@
-import React from "react";
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import React, { useEffect }  from "react";
+import { Link } from 'react-router-dom'; 
 
 const ImageGallery = ({ images }) => {
+  useEffect(() => {
+    console.log('Images received:', images);
+  }, [images]);
+
+  if (!images || images.length === 0) {
+    return <div>No images to display</div>;
+  }
   return (
     <div className="gallery" style={{
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
-      padding: "10px", // Add some padding to the container if needed
-      boxSizing: "border-box", // Ensures that padding doesn't overflow
+      padding: "10px", 
+      boxSizing: "border-box",
     }}>
-      {images.map((image, index) => (
-        // If image has a "link" property, use it for the Link, otherwise the image is not clickable
-        image.link ? (
-          <Link key={index} to={image.link} style={{ margin: "10px" }}>
-            <img
-              src={image.src}
-              alt={`Gallery Image ${index + 1}`}
-              style={{
-                maxHeight: "300px",
-                width: "calc(100% - 10px)", // Adjust width to account for padding
-                padding: "20px",  // Add padding around the image
-                margin: "5px",    // Add margin between images
-                boxSizing: "border-box", // Make padding part of the total width/height calculation
-              }}
-            />
-          </Link>
-        ) : (
+      {images.map((image) => (
+        <Link key={image.id} to={`/${image.category}/photos/${image.id}`} style={{ margin: "10px" }}>
           <img
-            key={index}
             src={image.src}
-            alt={`Gallery Image ${index + 1}`}
+            alt={image.title}
+            onError={(e) => console.error(`Error loading image: ${image.src}`)}
             style={{
               maxHeight: "300px",
-              width: "calc(100% - 10px)", // Adjust width to account for padding
-              padding: "20px",  // Add padding around the image
-              margin: "5px",    // Add margin between images
-              boxSizing: "border-box", // Make padding part of the total width/height calculation
+              width: "calc(100% - 10px)", 
+              padding: "20px",
+              margin: "5px",
+              boxSizing: "border-box",
             }}
           />
-        )
+        </Link>
       ))}
     </div>
   );
