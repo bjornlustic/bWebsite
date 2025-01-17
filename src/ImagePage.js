@@ -50,10 +50,19 @@ const ImagePage = () => {
       </Link>
         <br />
         {Object.entries(image).map(([key, value]) => {
-          if (key === "src" || key === "id" || key === "category" || key === "nestedBackLink" || key === "srcFULL"  ) return null;
+          if (key === "src" || 
+              key === "id" || 
+              key === "category" || 
+              key === "nestedBackLink" || 
+              key === "srcFULL"  ) 
+            return null;
           return (
             <React.Fragment key={key}>
-              <b>{key.replace(/([A-Z])/g, " $1").replace(/^./, str => str.toUpperCase())}:</b> {value || "Unknown"}
+              <b>
+                {key === "more info" 
+                  ? key 
+                  : key.replace(/([A-Z])/g, " $1").replace(/^./, str => str.toUpperCase())}
+              :</b> {value || "Unknown"}
               <br />
             </React.Fragment>
           );

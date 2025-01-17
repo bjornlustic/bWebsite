@@ -1,5 +1,7 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import BouncingPorygon from './BouncingPorygon';
 import "./App.css";
 import About from './About';
 import Contact from './Contact';
@@ -15,6 +17,10 @@ import ScrollToTop from './hooks/ScrollToTop';
 
 function Home() {
   return (
+    <div>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
     <nav>
       <ul>
         <li><Link to="/about">About</Link></li>
@@ -29,8 +35,9 @@ function Home() {
         </li>
         <li><Link to="/social">Social</Link></li>
       </ul>
-      <p>01/15/2025</p>
+      <p>01/17/2025</p>
     </nav>
+    </div>
   );
 }
 
@@ -55,11 +62,11 @@ function Name() {
 }
 
 function App() {
-  
   return (
     <Router>
       <ScrollToTop />
       <Header />
+      <BouncingPorygon />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

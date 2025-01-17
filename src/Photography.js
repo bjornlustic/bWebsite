@@ -59,9 +59,11 @@ const Photography = () => {
           </ul>
           <li>Lenses</li>
           <ul>
-            <li>Leica Summicron-R 50mm F2.0</li>
-            <li>Hasselblad 80mm F4</li>
-            <li>Nikon 50mm F2.0</li>
+            <li>Leica Summicron-R 50mm F/2.0</li>
+            <li>Hasselblad 80mm F/4</li>
+            <li>Nikon Series E 50mm f/1.8</li>
+            <li>Mamiya Sekor 80mm f/2.8</li>
+            <li>Carl Zeiss Planar 80mm f/2.8</li>
           </ul>
           <li>Film</li>
           <ul>

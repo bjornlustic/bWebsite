@@ -3,30 +3,84 @@
         "src": "music1.jpg", 
         "srcFULL": "music1.jpg", 
         "category": "music",
-        "title": "Golden Gate Bridge",
-        "year": "2017",
-        "location": "Fort Baker, CA, USA",
-        "medium": "Film",
-        "more info": "Golden Gate Bridge"
+        "title": "Treehaven Setup"
     },
     {   "id": "m2", 
         "src": "music2.jpg",
         "srcFULL": "music2.jpg", 
         "category": "music", 
-        "title": "Bald Dancer",
-        "year": "2019",
-        "location": "London, UK",
-        "medium": "Film",
-        "more info": "Man dancing in London in some random music event."
+        "title": "Techno in Golden Gate Park"
     },
-    {   "id": "m3", 
-        "src": "music3.jpg",
-        "srcFULL": "music3.jpg",  
+    {   "id": "m4", 
+        "src": "music4.jpg",
+        "srcFULL": "music4.jpg",  
         "category": "music",
-        "title": "Triangle House",
-        "year": "2017",
-        "location": "Lake Tahoe, CA, USA",
-        "medium": "Film",
-        "more info": "Triangle house gate."
+        "title": "Jimmy in the Rack"
+    },
+    {   "id": "m5", 
+        "src": "music5.jpg",
+        "srcFULL": "music5.jpg",  
+        "category": "music",
+        "title": "Bjorn with Access Virus B"
+    },
+    {   "id": "m6", 
+        "src": "music6.jpg",
+        "srcFULL": "music6.jpg",  
+        "category": "music",
+        "title": "Hunter with Prophet 5"
+    },
+    {   "id": "m7", 
+        "src": "music7.jpg",
+        "srcFULL": "music7.jpg",  
+        "category": "music",
+        "title": "Hunter and Bjorn with the Setup"
+    },
+    {   "id": "m8", 
+        "src": "music8.jpg",
+        "srcFULL": "music8.jpg",  
+        "category": "music",
+        "title": "Jimmy on Top of Roland SH-101"
+    },
+    {   "id": "m9", 
+        "src": "music9.jpg",
+        "srcFULL": "music9.jpg",  
+        "category": "music",
+        "title": "Roland SH-101 with Tree"
+    },
+    {   "id": "m10", 
+        "src": "music10.jpg",
+        "srcFULL": "music10.jpg",  
+        "category": "music",
+        "title": "Bjorn Hiding Behind Roland SH-101"
+    },
+    {   "id": "m11", 
+        "src": "music11.jpg",
+        "srcFULL": "music11.jpg",  
+        "category": "music",
+        "title": "Bjorn Holding Roland SH-101"
+    },
+    {   "id": "m12", 
+        "src": "music12.jpg",
+        "srcFULL": "music12.jpg",  
+        "category": "music",
+        "title": "Roland SH-101 in Elephant Truck Tree"
+    },
+    {   "id": "m13", 
+        "src": "music13.jpg",
+        "srcFULL": "music13.jpg",  
+        "category": "music",
+        "title": "Bjorn Playing Roland SH-101 like a Violin"
+    },
+    {   "id": "m16", 
+        "src": "music16.jpg",
+        "srcFULL": "music16.jpg",  
+        "category": "music",
+        "title": "Korg MS-20 Mini Used as a Bed Leg"
+    },
+    {   "id": "m17", 
+        "src": "music17.jpg",
+        "srcFULL": "music17.jpg",  
+        "category": "music",
+        "title": "Jimmy on top of the Bim and Boum"
     }
 ]
