@@ -13,7 +13,6 @@ const ImageShow = ({ image }) => {
           height: "auto",     // Maintain aspect ratio
           padding: "10px",
           boxSizing: "border-box",  // Include padding in the element's total width and height
-          // pointerEvents: "none",    // Prevent any interaction
         }}
       />
     </div>

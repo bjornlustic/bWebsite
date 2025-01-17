@@ -74,26 +74,6 @@ img {
   padding: 0px;
 }
 
-/* Print */
-@media print {
-  body {
-      font-size: 16px;
-  }
-
-  img {
-      max-width: 45%;
-      max-height: 45%;
-  }
-
-  .thumbs img {
-      max-height: 150px;
-  }
-
-  .fix {
-      width: 10%;
-  }
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;

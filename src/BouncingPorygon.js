@@ -1,53 +1,60 @@
 import React, { useEffect, useState, useRef } from 'react';
 import porygonImage from './assets/porygon.png';
-import explosionImage from './assets/explosion.png'; // Explosion image
+import explosionImage from './assets/explosion.png';
 
 const BouncingPorygon = () => {
   const [porygons, setPorygons] = useState([]);
 
   useEffect(() => {
-    const randomCount = Math.floor(Math.random() * (9 - 3 + 1)) + 3; // Random between 3 and 9
+    const randomCount = Math.floor(Math.random() * (20 - 7 + 1)) + 7;
     setPorygons(Array.from({ length: randomCount }, createPorygon));
   }, []);
 
   const createPorygon = () => {
-    const angle = Math.random() * Math.PI * 2; // Random angle
+    const angle = Math.random() * Math.PI * 2;
     return {
-    id: Math.random(),
-    x: Math.random() * (window.innerWidth - 50),
-    y: Math.random() * (window.innerHeight - 50),
-    dx: Math.cos(angle), // Convert angle to x velocity
-    dy: Math.sin(angle), // Convert angle to y velocity
-    hue: Math.random() * 360,
-    exploding: false
-  }};
+      id: Math.random(),
+      x: Math.random() * (window.innerWidth - 50),
+      y: Math.random() * (window.innerHeight - 50),
+      dx: Math.cos(angle),
+      dy: Math.sin(angle),
+      hue: Math.random() * 360,
+      exploding: false
+    };
+  };
 
-  const speed = 50; // Pixels per second
-  const hueSpeed = 50; // Hue change speed
+  const speed = 50;
+  const hueSpeed = 50;
   const requestRef = useRef(null);
   const previousTimeRef = useRef(null);
 
   useEffect(() => {
     const updatePositions = (time) => {
       if (previousTimeRef.current !== null) {
-        const deltaTime = (time - previousTimeRef.current) / 1000; // Convert to seconds
+        const deltaTime = (time - previousTimeRef.current) / 1000;
         const variableSpeed = speed + Math.floor(Math.random() * (1 - 1 + 1)) + 25;
 
         setPorygons(prevPorygons =>
           prevPorygons.map(porygon => {
-            if (porygon.exploding) return porygon; // Skip exploding ones
+            if (porygon.exploding) return porygon;
 
             let newX = porygon.x + porygon.dx * variableSpeed * deltaTime;
             let newY = porygon.y + porygon.dy * variableSpeed * deltaTime;
             let newDx = porygon.dx;
             let newDy = porygon.dy;
-            let newHue = (porygon.hue + hueSpeed * deltaTime) % 360; // Rotate colors
+            let newHue = (porygon.hue + hueSpeed * deltaTime) % 360;
 
-            // Ensure they stay inside the new window size
             if (newX < 0 || newX > window.innerWidth - 50) newDx *= -1;
             if (newY < 0 || newY > window.innerHeight - 50) newDy *= -1;
 
-            return { ...porygon, x: Math.max(0, Math.min(newX, window.innerWidth - 50)), y: Math.max(0, Math.min(newY, window.innerHeight - 50)), dx: newDx, dy: newDy, hue: newHue };
+            return {
+              ...porygon,
+              x: Math.max(0, Math.min(newX, window.innerWidth - 50)),
+              y: Math.max(0, Math.min(newY, window.innerHeight - 50)),
+              dx: newDx,
+              dy: newDy,
+              hue: newHue
+            };
           })
         );
       }
@@ -79,41 +86,48 @@ const BouncingPorygon = () => {
   const handleClick = (id) => {
     setPorygons(prevPorygons =>
       prevPorygons.map(porygon =>
-        porygon.id === id ? { ...porygon, exploding: true } : porygon
+        porygon.id === id && !porygon.exploding
+          ? { ...porygon, exploding: true }
+          : porygon
       )
     );
 
     setTimeout(() => {
-      setPorygons(prevPorygons =>
-        prevPorygons.filter(porygon => porygon.id !== id).concat(createPorygon())
-      );
+      setPorygons(prevPorygons => {
+        const updatedPorygons = prevPorygons.filter(porygon => porygon.id !== id);
+        const newPorygon = createPorygon();
+        return [...updatedPorygons, newPorygon];
+      });
     }, 500);
   };
 
   return (
-    <>
-      {porygons.map((porygon) => (
-        <img
-          key={porygon.id}
-          src={porygon.exploding ? explosionImage : porygonImage}
-          alt={porygon.exploding ? "Explosion" : "Bouncing Porygon"}
-          onClick={() => handleClick(porygon.id)}
-          style={{
-            position: 'fixed',
-            left: porygon.x,
-            top: porygon.y,
-            width: '50px',
-            height: '50px',
-            zIndex: '1',
-            pointerEvents: 'auto',
-            filter: porygon.exploding ? 'none' : `hue-rotate(${porygon.hue}deg)`, // No hue on explosion
-            transition: porygon.exploding ? 'transform 0.3s ease, opacity 0.5s' : 'none',
-            transform: porygon.exploding ? 'scale(2)' : 'scale(1)',
-            opacity: porygon.exploding ? 0 : 1
-          }}
-        />
-      ))}
-    </>
+    <div style={{ position: 'relative', zIndex: 0 }}>
+      {/* Porygon container with lower z-index */}
+      <div style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', zIndex: -1 }}>
+        {porygons.map((porygon) => (
+          <img
+            key={porygon.id}
+            src={porygon.exploding ? explosionImage : porygonImage}
+            alt={porygon.exploding ? "Explosion" : "Bouncing Porygon"}
+            onClick={() => handleClick(porygon.id)}
+            style={{
+              position: 'fixed',
+              left: porygon.x,
+              top: porygon.y,
+              width: '50px',
+              height: '50px',
+              zIndex: porygon.exploding ? 1 : -1,  // Ensure explosion stays on top temporarily
+              pointerEvents: porygon.exploding ? 'none' : 'auto',  // Allow clicking for normal Porygon
+              filter: porygon.exploding ? 'none' : `hue-rotate(${porygon.hue}deg)`,
+              transition: porygon.exploding ? 'transform 0.3s ease, opacity 0.5s' : 'none',
+              transform: porygon.exploding ? 'scale(2)' : 'scale(1)',
+              opacity: porygon.exploding ? 0 : 1
+            }}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 

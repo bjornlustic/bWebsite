@@ -9,6 +9,7 @@ const ImageGallery = ({ images }) => {
   if (!images || images.length === 0) {
     return <div>No images to display</div>;
   }
+
   return (
     <div className="gallery" style={{
       display: "flex",
